@@ -9,12 +9,12 @@ hamburger.addEventListener('click', function(){
 
 // navbar fixed
 window.onscroll = function() {
-    const header = document.querySelector("#header");
-    const fixedNav = header.offsetTop;
+    const navbar = document.querySelector("#navbar");
+    const fixedNav = navbar.offsetTop;
 
     if (window.scrollY > fixedNav) {
-        header.classList.add("navbar-fixed");
+        navbar.classList.add("navbar-fixed");
     }else{
-        header.classList.remove("navbar-fixed");
+        navbar.classList.remove("navbar-fixed");
     }
 }
